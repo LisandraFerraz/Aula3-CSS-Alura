@@ -1,0 +1,132 @@
+/*IMERSAO CSS*/
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://www.publicdomainpictures.net/pictures/130000/velka/gray-top-gradient-background.jpg');
+	background-size: auto 150vh;
+	font-family:courier;
+	background-attachment: fixed;
+	font-size: 12px;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	width: 110vw;
+	background-color: #0B2644 ; 
+}
+
+.site-title, .site-subtitle {
+	color: black;
+	text-align: center;
+	font-family: 'Source Code Pro', courier, monospace;
+	line-height: 2.2em;
+}
+
+a {
+	text-decoration: none;
+	font-family: courier;
+	font-size: 20px;
+}
+
+.menu a {
+	display: block;
+	color: white;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-size: 120%;
+	color: grey;
+}
+
+
+
+.menu ul {
+  display:flex; 
+  justify-content: space-evenly;
+}
+
+.menu li {
+	list-style:none;  	
+ }
+
+ .portfolio {
+	color: black;
+	font-family: 'Source Code Pro',courier, monospace;
+	line-height: 3em;
+	background-color:#cacaca;
+	padding: 2em;
+	margin: 2em;
+ }
+ 
+.portfolio .grid {
+	 display: grid;
+	 gap: 2em;
+ }
+
+
+ @media (min-width: 560px) {
+	.portfolio .grid {
+	grid-template-colums: 100px 100px;
+	}
+ }
+ 
+ @media (min-width: 880px) {
+	 .portfolio .grid {
+	  grid-template-columns: repeat(3, 260px);
+	 justify-content: center;
+	 align-content: center;
+	 height: calc(100vh -8em - 48px);
+	}
+ }
+
+ .portfolio figure {
+	text-align: center;
+ }
+ 
+ .img-portfolio {
+	height: 240px;
+	width: 280px;
+}
+
+figcaption {
+	font-size: 1.4em;
+}
+
+h2 {
+	text-align: center;
+	line-height: 4em;
+}

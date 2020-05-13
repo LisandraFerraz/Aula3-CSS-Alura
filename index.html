@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 3 CSS Alura </title>
+    <link rel="stylesheet" type="text/css" href="css/aula2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        <div>
+            <h1 class="site-title">Lisandra Ferraz </h1> 
+            <marquee behavior="alternate" width="420px"><h3 class="site-subtitle">Estudante de Programação</h3></marquee>
+        </div>
+        </header>
+
+        <section class="portfolio">
+            
+            <h2> Portfólio </h2>
+                    <!-- caso diretório=wrong, então: ./img/portifolio.jpg -->
+            <div class="grid">
+                <figure>
+                    <img class="img-portfolio" src="img/ecomer.png" alt="Conheça meu eCommerce!">
+                        <figcaption> eCommerce</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="img/mobile.png" alt="Projetos Mobile!">
+                        <figcaption> Mobile</figcaption>
+                </figure>
+
+                    <!--trocar br pelo grid gap no css-->
+                <figure>
+                    <img class="img-portfolio" src="img/personall.png" alt="Meus Projetos Pessoais">
+                        <figcaption>Projetos Pessoais </figcaption>
+                </figure>
+            </div>   
+        </section>
+    </body>
+</html>
